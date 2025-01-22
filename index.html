@@ -10,10 +10,10 @@
 <body>
     <header>
         <div class="menuButton">
-            <button id="menuB"><img src="menu.png" id="menuBImg"></button>
+            <button id="menuB" onclick="openSidebar()"><img src="/images/menu.png" id="menuBImg"></button>
         </div>
         <div class="logo">
-            <img src="logo.png" id="logo">
+            <img src="/images/logo.png" id="logo">
         </div>
         <div class="logout">
             <button id="logout" onclick="goToLogin()">Login</button>
@@ -23,25 +23,25 @@
     <aside id="aside">
         <div class="sidebar">
             <a href="index.html" id="homeSide">
-                <div><img src="home.png"></div>
+                <div><img src="/images/home.png"></div>
             <div>Home</div>
         </a>
         </div>
         <div class="sidebar">
             <a href="manage.html" id="manageSide">
-                <div><img src="manage.png"></div>
+                <div><img src="/images/manage.png"></div>
                 <div>Manage</div>
             </a>
         </div>
         <div class="sidebar">
             <a href="ai.html" id="analyticsSide">
-                <div><img src="aiLogo.png"></div>
+                <div><img src="/images/aiLogo.png"></div>
                 <div>AI</div>
             </a>
         </div>
         <div class="sidebar">
             <a href="setting.html" id="settingSide">
-                <div><img src="setting.png"></div>
+                <div><img src="/images/setting.png"></div>
                 <div>Setting</div>
             </a>
         </div>
@@ -60,34 +60,34 @@
                 <div class="submain2">
                     <div class="newButton">
                         <button id="new" onclick="goToManage()">
-                            <div><img src="new.png"></div>
+                            <div><img src="/images/new.png"></div>
                             <div>Add New</div>
                         </button>
                     </div>
                     <div class="media">
-                        <div><img src="media.gif"></div>
+                        <div><img src="/images/media.gif"></div>
                         <div><h3>0</h3></div>
                     </div>
                     <div class="member">
-                        <div><img src="member.gif"></div>
+                        <div><img src="/images/member.gif"></div>
                         <div><h3>0</h3></div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-        <nav>
+    <nav>
         <div class="nav1">
-           <a href="index.html"> <button id="home"><img src="/images/home.png"></button></a>
+            <button id="home"><img src="/images/home.png"></button>
         </div>
         <div class="nav2">
-            <a href="manage.html"><button id="manage"><img src="/images/manage.png"></button></a>
+            <button id="manage" onclick="goToManage()"><img src="/images/manage.png"></button>
         </div>
         <div class="nav3">
-            <a href="ai.html"><button id="analytics"><img src="/images/aiLogo.png"></button></a>
+            <button id="analytics" onclick="goToAI()"><img src="/images/aiLogo.png"></button>
         </div>
         <div class="nav4">
-            <a href="setting.html"><button id="setting"><img src="/images/setting.png"></button></a>
+            <button id="setting" onclick="goToSetting()"><img src="/images/setting.png"></button>
         </div>
     </nav>
 </body>
