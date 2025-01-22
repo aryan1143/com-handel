@@ -23,6 +23,10 @@ body {
     border-radius: 10px 25px 10px 25px;
 }
 
+aside img {
+    height: 32px;
+}
+
 aside {
     padding: 20px;
     display: none;
