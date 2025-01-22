@@ -10,21 +10,21 @@ function openSidebar() {
 }
 
 function goToHome() {
-    window.location.href = "/index.html";
+    window.location.href = "index.html";
 }
 function goToManage() {
-    window.location.href = "/manage.html";
+    window.location.href = "manage.html";
 }
 function goToAI() {
-    window.location.href = "/ai.html";
+    window.location.href = "ai.html";
 }
 function goToSetting() {
-    window.location.href = "/setting.html";
+    window.location.href = "setting.html";
 }
 function goToLogin() {
-    window.location.href = "/login.html"
+    window.location.href = "login.html"
 }
 
 function goToSignUp() {
-    window.location.href = "/signUp.html"
+    window.location.href = "signUp.html"
 }
