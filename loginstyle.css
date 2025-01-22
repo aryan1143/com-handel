@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(255, 254, 240);
+    align-items: center;
+    padding: 0 2vh 0 2vh;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.108);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signUp {
+    display: flex;
+    margin: 10px 5px 0 5px;
+}
+
+.signUp a {
+    text-decoration: none;
+}
+
+body {
+    background: url(bg.jpg);
+}
+
+#menuB {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+#menuB img {
+    height: 3.5vh;
+}
+
+#logout {
+    background-color: rgb(255, 232, 194);
+    border: none;
+    padding: 1vh 2vh 1vh 2vh;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.145);
+}
+
+#logo {
+    height: 7vh;
+    margin: 0 0 0 40px;
+}
+
+aside {
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    gap: 2vh;
+    background-color: rgb(255, 254, 240);
+    position: fixed;
+    z-index: 5;
+    height: 100vh;
+    width: 25vw;
+}
+
+.sidebar a {
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 252, 208);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    gap: 3vw;
+}
+
+nav {
+    background-color: rgba(218, 218, 218, 0);
+    position: fixed;
+    top: calc(100vh - 3.5rem);
+    display: flex;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.108);
+    background-color: rgb(255, 254, 240);
+    z-index: 10;
+}
+
+nav button {
+    border: none;
+    background-color: rgb(255, 254, 240);
+    cursor: pointer;
+    width: 25vw;
+    padding: 10px 0 0 10px;
+}
+
+nav button:active {
+    background-color: rgb(255, 243, 71);
+}
+nav button:focus {
+    background-color: rgb(255, 251, 199);
+    border-radius: 10px;
+}
+
+nav button img {
+    height: 5vh;
+}
+
+.main {
+    margin: calc(50vh - 289.2px) 10vw;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 254, 240);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.108);
+}
+
+h1 {
+    margin: 20px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+
+#username, #password {
+    background: rgba(255, 255, 255, 0.689);
+    border-radius: 10px;
+    border-color: rgba(240, 248, 255, 0);
+    margin: 0px;
+    padding: 5px 15px;
+    height: 5vh;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.171);
+    transition: transform 0.5s;
+}
+
+#submit {
+    background-color: rgb(255, 232, 194);
+    border-radius: 30px;
+    border-color: rgba(240, 248, 255, 0);
+    margin: 10px auto;
+    padding: 7px 10vw;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.108);
+    transition: transform 0.5s;
+}
+
+#username:hover, #password:hover,#submit:hover {
+    transform: scale(1.01);
+}
+
+#submit:hover {
+    background-color: blue;
+}
+
+#username, #password {
+    padding-bottom: 5px;
+    margin-bottom: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        top: calc(100vh - 6.5rem);
+    }
+
+    nav button img {
+        height: 4vh;
+    }
+
+    .main2{
+        margin: 5vw;
+    }
+
+    #new {
+        margin: 5vw auto;
+        width: 80vw;
+        gap: 15vw;
+    }
+
+    aside {
+        width: 50vw;
+    }
+
+    aside img {
+        height: 25px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .signUp {
+        margin: 40px 0 0px 0;
+        padding: 20px;
+        font-size: large;
+    }
+
+    #logo {
+        height: 8.5vh;
+        margin: 0 0 0 40px;
+    }
+
+    .main {
+        margin: calc(50vh - 289.2px) 25vw;
+        height: 60vh;
+        font-size: x-large;
+    }
+
+    .main h1{
+        margin: 10px 30px 60px 30px;
+    }
+
+    #username, #password {
+        width: 18vw;
+    }
+
+    #submit {
+        padding: 10px 5vw;
+    }
+
+    .main2 {
+        display: flex;
+        gap: 10vw;
+        margin: 25vh 1vw 5vh 15vw;
+    }
+
+    .welcome {
+        width: 30vw;
+    }
+
+    #new {
+        justify-content: space-evenly;
+    }
+}

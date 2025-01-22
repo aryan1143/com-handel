@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menuButton">
+            <button id="menuB" onclick="openSidebar()"><img src="menu.png" id="menuBImg"></button>
+        </div>
+        <div class="logo">
+            <img src="logo.png" id="logo">
+        </div>
+        <div class="logout">
+            <button id="logout" onclick="goToLogin()">Login</button>
+        </div>
+    </header>
+
+    <aside id="aside">
+        <div class="sidebar">
+            <a href="index.html" id="homeSide">
+                <div><img src="home.png"></div>
+            <div>Home</div>
+        </a>
+        </div>
+        <div class="sidebar">
+            <a href="manage.html" id="manageSide">
+                <div><img src="manage.png"></div>
+                <div>Manage</div>
+            </a>
+        </div>
+        <div class="sidebar">
+            <a href="ai.html" id="analyticsSide">
+                <div><img src="aiLogo.png"></div>
+                <div>AI</div>
+            </a>
+        </div>
+        <div class="sidebar">
+            <a href="setting.html" id="settingSide">
+                <div><img src="setting.png"></div>
+                <div>Setting</div>
+            </a>
+        </div>
+    </aside>
+
+    <main>
+        <div class="main">
+            <div class="main1">
+                <h1>Welcome</h1>
+            </div>
+            <div class="main2">
+                <div class="welcome">
+                    <div><h2>Welcome to Our Content Hub!</h2></div>
+                    <div><p>Unlock your creative potential and take your content to the next level. Here, you have the power to manage, analyze, and optimize your videos like never before. Let's turn your vision into reality, one upload at a time!</p></div>
+                </div>
+                <div class="submain2">
+                    <div class="newButton">
+                        <button id="new" onclick="goToManage()">
+                            <div><img src="new.png"></div>
+                            <div>Add New</div>
+                        </button>
+                    </div>
+                    <div class="media">
+                        <div><img src="media.gif"></div>
+                        <div><h3>0</h3></div>
+                    </div>
+                    <div class="member">
+                        <div><img src="member.gif"></div>
+                        <div><h3>0</h3></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <nav>
+        <div class="nav1">
+            <button id="home" onclick="goToHome()"><img src="home.png"></button>
+        </div>
+        <div class="nav2">
+            <button id="manage" onclick="goToManage()"><img src="manage.png"></button>
+        </div>
+        <div class="nav3">
+            <button id="analytics" onclick="goToAI()"><img src="aiLogo.png"></button>
+        </div>
+        <div class="nav4">
+            <button id="setting" onclick="goToSetting()"><img src="setting.png"></button>
+        </div>
+    </nav>
+</body>
+</html>

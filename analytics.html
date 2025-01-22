@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics</title>
+    <link rel="stylesheet" href="analyticsStyles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="menuButton">
+            <button id="menuB" onclick="openSidebar()"><img src="menu.png" id="menuBImg"></button>
+        </div>
+        <div class="logo">
+            <img src="logo.png" id="logo">
+        </div>
+        <div class="logout">
+            <button id="logout" onclick="goToLogin()">Login</button>
+        </div>
+    </header>
+
+    <aside id="aside">
+        <div class="sidebar">
+            <a href="index.html" id="homeSide">
+                <div><img src="home.png"></div>
+            <div>Home</div>
+        </a>
+        </div>
+        <div class="sidebar">
+            <a href="manage.html" id="manageSide">
+                <div><img src="manage.png"></div>
+                <div>Manage</div>
+            </a>
+        </div>
+        <div class="sidebar">
+            <a href="ai.html" id="analyticsSide">
+                <div><img src="aiLogo.png"></div>
+                <div>AI</div>
+            </a>
+        </div>
+        <div class="sidebar">
+            <a href="setting.html" id="settingSide">
+                <div><img src="setting.png"></div>
+                <div>Setting</div>
+            </a>
+        </div>
+    </aside>
+
+    <main>
+        <h1>Coming Soon</h1>
+    </main>
+
+    <nav>
+        <div class="nav1">
+            <button id="home" onclick="goToHome()"><img src="home.png"></button>
+        </div>
+        <div class="nav2">
+            <button id="manage" onclick="goToManage()"><img src="manage.png"></button>
+        </div>
+        <div class="nav3">
+            <button id="analytics" onclick="goToAI()"><img src="aiLogo.png"></button>
+        </div>
+        <div class="nav4">
+            <button id="setting" onclick="goToSetting()"><img src="setting.png"></button>
+        </div>
+    </nav>
+</body>
+</html>
